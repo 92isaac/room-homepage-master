@@ -3,9 +3,13 @@ let right = document.querySelector('.right');
 let displayHeroImage = document.querySelector('.image .display')
 let heroImages = document.querySelectorAll('.image .display-list img')
 let display_index =0
+let text_index = 0
+let textWrapper = document.querySelector('.text-wrapper')
+let heroTextContent = document.querySelectorAll('.text-list')
 
 
 displayHeroImage.src = heroImages[display_index].src;
+textWrapper.appendChild(heroTextContent[text_index])
 let lastIndex = heroImages.length - 1;
 console.log(lastIndex);
 console.log(heroImages);
