@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-section">
+        <div class="hero-image">
+          <div class="image">
+            <img src="" alt="" class="display"/>
+            <div class="display-list">
+              <img src="./images/desktop-image-hero-1.jpg" alt="" />
+              <img src="./images/desktop-image-hero-2.jpg" alt="" />
+              <img src="./images/desktop-image-hero-3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="navbar">
+            <a href="" class="logo">room</a>
+            <ul class="nav">
+              <li><a href="">home</a></li>
+              <li><a href="">shop</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-text">
+          <div class="text-wrapper">
+            <h1>Discover innovative ways to decorate</h1>
+            <p>
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <button>
+              Shop Now <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <div class="display-list">
+            <div class="text-list">
+              <h1>Discover innovative ways to decorate</h1>
+              <p>
+                We provide unmatched quality, comfort, and style for property
+                owners across the country. Our experts combine form and function
+                in bringing your vision to life. Create a room in your own style
+                with our collection and make your property a reflection of you
+                and what you love.
+              </p>
+              <button>
+                Shop Now <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="text-list">
+              <h1>We are available all across the globe</h1>
+              <p>
+                With stores all over the world, it's easy for you to find
+                furniture for your home or place of business. Locally, we’re in
+                most major cities throughout the country. Find the branch
+                nearest you using our store locator. Any questions? Don't
+                hesitate to contact us today.
+              </p>
+              <button>
+                Shop Now <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="text-list">
+              <h1>Manufactured with the best materials</h1>
+              <p>
+                Our modern furniture store provide a high level of quality. Our
+                company has invested in advanced technology to ensure that every
+                product is made as perfect and as consistent as possible. With
+                three decades of experience in this industry, we understand what
+                customers want for their home and office.
+              </p>
+              <button>
+                Shop Now <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="left">
+              <img src="./images/icon-angle-left.svg" alt="" />
+            </button>
+            <button class="right">
+              <img src="./images/icon-angle-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="firstImage">
+          <img src="./images/image-about-dark.jpg" alt="" />
+        </div>
+        <div class="about-text">
+          <h3>About our furniture</h3>
+          <p>
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <div class="secondImage">
+          <img src="./images/image-about-light.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
+
+
+<!-- // Select left and right buttons
+let left = document.querySelector('.left');
+let right = document.querySelector('.right');
+
+// Select display and images
+let displayHeroImage = document.querySelector('.image .display')
+let heroImages = document.querySelectorAll('.image .display-list img')
+
+// Initialize display index
+let display_index = 0
+
+// Set initial display image
+displayHeroImage.src = heroImages[display_index].src;
+
+// Determine last index of images array
+let lastIndex = heroImages.length - 1;
+
+// Log last index and hero images
+console.log(lastIndex);
+console.log(heroImages);
+
+// Function to check if display index exceeds last index
+const checkIndexNext = () => {
+  if (display_index > lastIndex) {
+    display_index = 0;
+  }
+};
+
+// Function to check if display index is less than zero
+const checkIndexPrev = () => {
+  if (display_index < 0) {
+    display_index = lastIndex;
+  }
+};
+
+// Add click event listener for right button
+right.addEventListener('click', () => {
+  // Increment display index
+  ++display_index;
+  // Check if display index exceeds last index
+  checkIndexNext();
+  // Set display image
+  displayHeroImage.src = heroImages[display_index].src;
+  // Log display index
+  console.log(display_index);
+});
+
+// Add click event listener for left button
+left.addEventListener('click', () => {
+  // Decrement display index
+  --display_index;
+  // Check if display index is less than zero
+  checkIndexPrev();
+  // Set display image
+  displayHeroImage.src = heroImages[display_index].src;
+  // Log display index
+  console.log(display_index);
+}); -->
