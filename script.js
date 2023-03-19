@@ -6,7 +6,9 @@ let display_index =0
 let text_index = 0
 let textWrapper = document.querySelector('.text-wrapper')
 let heroTextContent = document.querySelectorAll('.text-list')
-
+let menu = document.querySelector('.toogle .fa-bars')
+let menu_list = document.querySelector('.navbar .nav')
+let logo = document.querySelector('.navbar a.logo')
 
 displayHeroImage.src = heroImages[display_index].src;
 textWrapper.appendChild(heroTextContent[text_index])
@@ -42,3 +44,10 @@ left.addEventListener('click', () => {
   displayHeroImage.src = heroImages[display_index].src;
   console.log(display_index);
 });
+
+menu.addEventListener(`click`, ()=>{
+  menu.classList.toggle('fa-times')
+  menu_list.classList.toggle('d-block')
+  logo.classList.toggle('display-list')
+
+})
